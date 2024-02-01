@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+    const names = ["Ram", "Shyam", "Seeta"];
+    names.forEach(function (kuchbhi)
+    {
+        document.write(kuchbhi + " "+ "<br><br>");
+      });
+
+        let name = ['ram', 'shyam', 'seeta', 'ram', 'seeta', 'geeta', 'shyam'];
+        // name.forEach(function(kuchbhi)
+        // {
+        //     document.write(kuchbhi + '' + '<br> ');
+        // }
+        // );
+
+        // let names = ['ram', 'shyam', 'seeta', 'ram', 'seeta', 'geeta', 'shyam'];
+
+let uniqueNames = [];
+let seenNames = [];
+
+name.forEach(function(name) {
+    if (!seenNames[name]) {
+        uniqueNames.push(name);
+        seenNames[name] = true;
+    }
+});
+
+console.log(uniqueNames);
+
+
+
+        
+        
+        
+    </script>
+</body>
+</html>
